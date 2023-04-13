@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/house"
+        android:title="Home"
+        app:cnb_iconColor="@color/blue" />
+    <item
+        android:id="@+id/giohang"
+        android:icon="@drawable/bag"
+        android:title="Giỏ hàng"
+        app:cnb_iconColor="@color/blue" />
+    <item
+        android:id="@+id/tienich"
+        android:icon="@drawable/bag"
+        android:title="Tiện ích"
+        app:cnb_iconColor="@color/blue" />
+
+</menu>

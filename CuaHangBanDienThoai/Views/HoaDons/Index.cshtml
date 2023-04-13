@@ -1,0 +1,68 @@
+﻿@model IEnumerable<CuaHangBanDienThoai.Models.GetHoaDons_Result>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Hóa đơn</h1>
+<table class="table  table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaHD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TongTien)
+        </th>
+       
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(model => item.MaHD)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.TenTK)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.HoTen)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.NgayBan)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.DiaChi)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.SDT)
+            </th>
+            <th>
+                @Html.DisplayFor(model => item.TongTien)
+            </th>
+            
+            <td>
+
+                @Html.ActionLink("Details", "Details", new { id = item.MaHD })
+
+            </td>
+        </tr>
+    }
+
+</table>

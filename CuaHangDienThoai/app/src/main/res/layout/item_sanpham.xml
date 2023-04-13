@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/img_hinhanh"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/tv_ten"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_hinhanh"
+            android:text="Loa bluetooth"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_gia"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ten"
+            android:text="Ä‘ 12.000"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+</LinearLayout>

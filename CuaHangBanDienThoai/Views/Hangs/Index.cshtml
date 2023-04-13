@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CuaHangBanDienThoai.Models.Hang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenHang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhAnh)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaHang)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenHang)
+    </td>
+    <td>
+       <img src="@item.HinhAnh" height="150"/>
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MaHang }) |
+        @Html.ActionLink("Details", "Details", new { id = item.MaHang }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MaHang })
+    </td>
+</tr>
+    }
+
+</table>
